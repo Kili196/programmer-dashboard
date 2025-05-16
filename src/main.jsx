@@ -1,10 +1,15 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
 
-createRoot(document.getElementById('root')).render(
+import Sidebar from "./Sidebar.jsx";
+import Layout from "./Layout.jsx";
+
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App />
-  </StrictMode>,
-)
+    <Layout>
+      {" "}
+      {<Sidebar />} <div className="flex-1"> hello</div>
+    </Layout>
+  </StrictMode>
+);
