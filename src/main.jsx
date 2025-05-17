@@ -6,6 +6,7 @@ import Sidebar from "./Sidebar.jsx";
 import Layout from "./Layout.jsx";
 import { BrowserRouter, Outlet, RouterProvider } from "react-router";
 import { createBrowserRouter } from "react-router";
+import PageLayout from "./routes/PageLayout.jsx";
 
 const routes = createBrowserRouter([
   {
@@ -19,7 +20,10 @@ const routes = createBrowserRouter([
       </Layout>
     ),
     children: [
-      { path: "json-converter", element: <div> test </div> },
+      {
+        path: "json-converter",
+        element: <PageLayout heading={"Json Converter"} />,
+      },
       { path: "cmd-cheatsheet", element: <div> test </div> },
       { path: "color-picker", element: <div> test </div> },
     ],

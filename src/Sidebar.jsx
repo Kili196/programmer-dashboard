@@ -4,7 +4,7 @@ export default function Sidebar() {
   const navLinkStyling = `
   font-medium
   text-white
-  text-lg
+  text-xl
   rounded-xl
   px-4
   py-2
