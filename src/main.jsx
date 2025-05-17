@@ -24,8 +24,14 @@ const routes = createBrowserRouter([
         path: "json-converter",
         element: <PageLayout heading={"Json Converter"} />,
       },
-      { path: "cmd-cheatsheet", element: <div> test </div> },
-      { path: "color-picker", element: <div> test </div> },
+      {
+        path: "cmd-cheatsheet",
+        element: <PageLayout heading={"CMD Cheatsheet"} />,
+      },
+      {
+        path: "color-picker",
+        element: <PageLayout heading={"Color picker"} />,
+      },
     ],
   },
 ]);
