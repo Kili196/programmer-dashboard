@@ -1,7 +1,21 @@
 import { NavLink, Link } from "react-router";
 
 export default function Sidebar() {
-  const navLinkStyling = "font-medium text-white text-xl p-2 rounded-lg";
+  const navLinkStyling = `
+  font-medium
+  text-white
+  text-lg
+  rounded-xl
+  px-4
+  py-2
+  hover:bg-white/20
+  transition
+  duration-200
+  focus:outline-none
+  focus:ring-2  
+  focus:ring-blue-300
+
+`;
 
   const navLinks = [
     { to: "/", label: "Home" },
